@@ -1,7 +1,7 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-author:YanniPuhlik 
-date: March 2016
+author:"YanniPuhlik"
+date: "March, 2016"
 ---
 
 
