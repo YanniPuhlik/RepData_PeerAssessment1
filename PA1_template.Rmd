@@ -37,7 +37,7 @@ Creating histogram of the total number of steps taken each day
 ```r
 hist(tapply(steps, date, sum), xlab = "Steps", ylab = "Days", col = "green", breaks = 10, main = "The total number of steps taken each day")
 ```
-![plot of chunk Rplot-1](Rplot1.png) 
+
 
 Calculating the mean and median total number of steps taken per day
 
@@ -85,7 +85,7 @@ dataInterval <- dataInterval[order(dataInterval$dataInterval),]
 ```r
 plot(dataInterval$dataInterval, dataInterval$meanInterval, type = "l", col = "green", main = "Average steps per minute", xlab ="Time of Day", ylab="Mean Steps")
 ```
-![plot of chunk Rplot-2](Rplot2.png) 
+
 
 Each 500 interval on the x-axis equals 5 minutes during the day
 ```r
@@ -141,7 +141,7 @@ Max.   :806.00   2012-10-06:  288   1010   :   61
 ```r
 hist(tapply(newdata$steps, newdata$date, sum), xlab="Steps", ylab= "Days", col = "green", breaks=10, main="Steps taken on a Daily basis")
 ```
-![plot of chunk Rplot-3](Rplot3.png) 
+
 5. Calculating the mean and median total number of steps taken per day
 
 ```r
@@ -178,9 +178,8 @@ then create two separate plots
 ```r
 plot(mean_weekday, type = "l", xlab="Time interval", ylab="Steps", main="Weekday activity", col="darkblue")
 ```
-![plot of chunk Rplot-4](Rplot4.png) 
 
 ```r
 plot(mean_weekend, type="l", xlab="Time interval", ylab="Steps", main="Weekend activity", col="red")
 ```
-![plot of chunk Rplot-5](Rplot5.png) 
+ 
